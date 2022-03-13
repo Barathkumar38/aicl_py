@@ -1,4 +1,3 @@
-@@ -1,23 +1,103 @@
 from fastapi import FastAPI
 from urllib.request import Request
 from fastapi import FastAPI,Request
@@ -17,6 +16,7 @@ templates = Jinja2Templates(directory="templates")
 
 class User(BaseModel):
     id: int
+        
     name = 'barathkumar'
     signup: Optional[bool] = None
     list1: Optional[list] = []
